@@ -18,22 +18,22 @@ public class Monetario {
     }
 
     public boolean eMaiorQue(Monetario monetario) {
-        return this.quantidade != null && this.quantidade.compareTo(monetario.getquantidade()) > 0;
+        return this.quantidade != null && this.quantidade.compareTo(monetario.getQuantidade()) > 0;
     }
 
     public Monetario adicionar(Monetario monetario) {
-        return new Monetario(setScale(this.quantidade.add(monetario.getquantidade())));
+        return new Monetario(setScale(this.quantidade.add(monetario.getQuantidade())));
     }
 
     public Monetario subtrair(Monetario monetario) {
-        return new Monetario(setScale(this.quantidade.subtract(monetario.getquantidade())));
+        return new Monetario(setScale(this.quantidade.subtract(monetario.getQuantidade())));
     }
 
     public Monetario multiplicar(int multiplier) {
         return new Monetario(setScale(this.quantidade.multiply(new BigDecimal(multiplier))));
     }
 
-    public BigDecimal getquantidade() {
+    public BigDecimal getQuantidade() {
         return quantidade;
     }
 
