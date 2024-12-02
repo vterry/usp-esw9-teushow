@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>br.com.usp.esw</groupId>
+        <artifactId>teushow</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>oferta-eventos-domain</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>venda-ingressos</module>
+        <module>recomendacao-ofertas</module>
+        <module>oferta-eventos-application-service</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>br.com.usp.esw</groupId>
+            <artifactId>venda-ingressos</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>br.com.usp.esw</groupId>
+            <artifactId>recomendacao-ofertas</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
