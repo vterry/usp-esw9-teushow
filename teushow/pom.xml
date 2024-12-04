@@ -45,6 +45,11 @@
 			</dependency>
 			<dependency>
 				<groupId>br.com.usp.esw</groupId>
+				<artifactId>oferta-eventos-domain-service</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>br.com.usp.esw</groupId>
 				<artifactId>oferta-eventos-application-service</artifactId>
 				<version>${project.version}</version>
 			</dependency>

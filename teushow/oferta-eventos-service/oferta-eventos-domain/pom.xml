@@ -7,6 +7,7 @@
         <groupId>br.com.usp.esw</groupId>
         <artifactId>teushow</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath></relativePath>
     </parent>
 
     <artifactId>oferta-eventos-domain</artifactId>
@@ -15,18 +16,8 @@
     <modules>
         <module>venda-ingressos</module>
         <module>recomendacao-ofertas</module>
+        <module>oferta-eventos-domain-service</module>
         <module>oferta-eventos-application-service</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>br.com.usp.esw</groupId>
-            <artifactId>venda-ingressos</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>br.com.usp.esw</groupId>
-            <artifactId>recomendacao-ofertas</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

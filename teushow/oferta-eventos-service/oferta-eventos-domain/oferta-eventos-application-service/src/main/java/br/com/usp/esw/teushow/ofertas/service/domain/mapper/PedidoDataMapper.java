@@ -12,11 +12,13 @@ import br.com.usp.esw.teushow.vendas.module.entity.Ingresso;
 import br.com.usp.esw.teushow.vendas.module.entity.ItemPedido;
 import br.com.usp.esw.teushow.vendas.module.entity.Pedido;
 import br.com.usp.esw.teushow.vendas.module.valueobject.Endereco;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+@Component
 public class PedidoDataMapper {
 
     public Evento criarPedidoCommandParaEvento(CriarPedidoCommand criarPedidoCommand){
