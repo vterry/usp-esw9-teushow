@@ -60,12 +60,17 @@ public class PedidoDataMapper {
 
 
     private Endereco enderecoRetiroParaEndereco(EnderecoRetirada enderecoRetirada){
+        if(enderecoRetirada == null){
+            return null;
+        }
+
         return new Endereco(
                 UUID.randomUUID(),
                 enderecoRetirada.getRua(),
                 enderecoRetirada.getCodigoPostal(),
                 enderecoRetirada.getCidade()
         );
+
     }
 
 }

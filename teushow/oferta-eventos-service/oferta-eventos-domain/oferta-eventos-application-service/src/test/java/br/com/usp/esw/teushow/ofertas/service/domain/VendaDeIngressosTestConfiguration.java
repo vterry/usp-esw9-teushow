@@ -11,9 +11,12 @@ import br.com.usp.esw.teushow.ofertas.service.domain.ports.output.repository.Ped
 import org.mockito.Mockito;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 
 @SpringBootApplication(scanBasePackages = "br.com.usp.esw.teushow")
+@ComponentScan(basePackages = "br.com.usp.esw.teushow")
 public class VendaDeIngressosTestConfiguration {
 
     @Bean

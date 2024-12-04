@@ -21,8 +21,8 @@ public class OfertaDeEventosDomainServiceImpl implements OfertaDeEventosDomainSe
     public PedidoCriadoEvent validarEIniciarPedido(Pedido pedido, Evento evento, DomainEventPublisher<PedidoCriadoEvent> pedidoCriadoEventDomainEventPublisher) {
         validarEvento(evento);
         adicionarInformacaoIngresso(pedido, evento);
-        pedido.validarPedido();
         pedido.inicializarPedido();
+        pedido.validarPedido();
         System.out.println("Pedido com id:" + pedido.getId().getValue() + "foi iniciado!");
         return new PedidoCriadoEvent(pedido, ZonedDateTime.now(ZoneId.of(UTC)), pedidoCriadoEventDomainEventPublisher);
     }

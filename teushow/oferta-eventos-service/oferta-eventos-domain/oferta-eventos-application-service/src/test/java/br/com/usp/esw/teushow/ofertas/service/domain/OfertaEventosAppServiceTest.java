@@ -4,6 +4,7 @@ import br.com.usp.esw.common.domain.valueobjects.*;
 import br.com.usp.esw.teushow.ofertas.service.domain.dto.create.CriarPedidoCommand;
 import br.com.usp.esw.teushow.ofertas.service.domain.dto.create.CriarPedidoResponse;
 import br.com.usp.esw.teushow.ofertas.service.domain.dto.create.ItemPedido;
+import br.com.usp.esw.teushow.ofertas.service.domain.handler.CriarPedidoCommandHandler;
 import br.com.usp.esw.teushow.ofertas.service.domain.mapper.PedidoDataMapper;
 import br.com.usp.esw.teushow.ofertas.service.domain.ports.input.service.OfertaDeEventosAppService;
 import br.com.usp.esw.teushow.ofertas.service.domain.ports.output.repository.ClienteRepository;
@@ -30,7 +31,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-@SpringBootTest(classes = OfertaEventosAppServiceTest.class)
+@SpringBootTest(classes = VendaDeIngressosTestConfiguration.class)
 public class OfertaEventosAppServiceTest {
 
     @Autowired
