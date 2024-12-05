@@ -74,7 +74,7 @@ public class OfertaEventosAppServiceTest {
                         ItemPedido.builder()
                                 .ingressoId(ID_INGRESSO)
                                 .quantidade(3)
-                                .preco(new BigDecimal("50"))
+                                .preco(new BigDecimal("50.00"))
                                 .valorTotal(new BigDecimal("150.00"))
                                 .build()))
                 .build();
@@ -100,7 +100,7 @@ public class OfertaEventosAppServiceTest {
     public void testarCriarPedido(){
         CriarPedidoResponse criarPedidoResponse = ofertaDeEventosAppService.createOrder(criarPedidoCommand);
         assertEquals(criarPedidoResponse.getStatusDoPedido(), StatusDoPedido.RESERVADO);
-        assertEquals(criarPedidoResponse.getMensagem(), "");
+        assertEquals(criarPedidoResponse.getMensagem(), "Pedido criado com sucesso!");
         assertNotNull(criarPedidoResponse.getPedidotrackingId());
     }
 

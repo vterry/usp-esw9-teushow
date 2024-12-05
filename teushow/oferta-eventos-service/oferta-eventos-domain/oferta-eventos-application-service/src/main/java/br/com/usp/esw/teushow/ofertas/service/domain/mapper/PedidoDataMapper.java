@@ -45,6 +45,7 @@ public class PedidoDataMapper {
         return CriarPedidoResponse.builder()
                 .pedidotrackingId(pedido.getTrackingId().getValue())
                 .statusDoPedido(pedido.getStatusDoPedido())
+                .mensagem("Pedido criado com sucesso!")
                 .build();
     }
 

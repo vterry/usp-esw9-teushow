@@ -76,7 +76,7 @@ public class Pedido extends AggregateRoot<IdPedido> {
     }
 
     private void validarPedidoInicial(){
-        if (statusDoPedido != null || getId() == null){
+        if (statusDoPedido == null || this.getId() == null){
             throw new VendaIngressoModuleException("Pedido com estado inválido para inicialização!");
         }
     }
